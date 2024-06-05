@@ -17,6 +17,7 @@ const AddCommentForm = () => {
             });
             if (response.ok) {
                 alert('Comment added successfully');
+                location.reload();
             } else {
                 const errorData = await response.text();
                 console.error('Error adding comment:', errorData);

@@ -29,6 +29,7 @@ const UploadImageForm = () => {
                 console.log('Response status:', response.status);
                 if (response.ok) {
                     alert(responseData);
+                    location.reload();
                 } else {
                     console.error('Error uploading image:', responseData);
                     alert('Failed to upload image');

@@ -16,6 +16,7 @@ const RatingForm = () => {
         });
         if (response.ok) {
             alert('Rating updated successfully');
+            location.reload();
         } else {
             alert('Failed to update rating');
         }
